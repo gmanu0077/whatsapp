@@ -1,0 +1,29 @@
+.appContainer {
+  display: flex;
+  height: 100%;
+  background-color: white;
+
+}
+
+.contactListContainer {
+  width: 30%;
+}
+
+.conversationContainer {
+  width: 70%;
+
+}
+
+
+
+
+@media (max-width: 768px) {
+  .contactListContainer, .conversationContainer {
+    width: 100%;
+    display: none;
+  }
+
+  .hideOnMobile {
+    display: block;
+  }
+}

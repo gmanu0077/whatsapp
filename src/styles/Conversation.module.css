@@ -1,0 +1,190 @@
+.conversationContainer {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+
+  width:100%
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileInfo span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profileInfo small {
+  color: #888;
+}
+
+.onlineStatus {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.headerOptions {
+  display: flex;
+  align-items: center;
+}
+
+.headerOptions i {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.messages {
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: scroll;
+  background-color: white;
+  
+  width: 94%;
+  /* border-bottom-left-radius: 10px; */
+  height: 70%;
+  /* border-bottom-right-radius: 10px; */
+}
+
+.message {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+.you {
+  align-self: flex-end;
+  text-align: right;
+  margin-left:auto;
+}
+
+.other {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.messageText {
+  background-color: #fafafa;
+  padding: 16px;
+  border-radius: 44px;
+  margin: 5px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.you .messageText {
+  background-color: #dcf7c5;
+}
+
+.messageTime {
+  color: rgba(0, 0, 0, 0.46);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.you .messageTime {
+  align-self: flex-end;
+}
+
+.inputContainer {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+ 
+}
+
+.inputContainer input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #d8d8d8;
+  border-radius: 69px;
+  margin: 0 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.inputContainer i {
+  font-size: 20px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.backButton {
+  background: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 20px;
+
+}
+.mainhead{
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .conversationContainer {
+    width: 100%;
+    display: block;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+  .messages{
+   height: 70%;
+   width: 90%;
+  }
+  .inputContainer{
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+  }
+  .header{
+    width: 100%;
+  }
+}
+@media(max-width:450px){
+  .inputContainer{
+    position: absolute;
+    bottom: 0;
+    width: 94%;
+  }
+}
+@media(max-width:360px){
+  .messages{
+    height: 70%;
+    width: 88%;
+   }
+}
