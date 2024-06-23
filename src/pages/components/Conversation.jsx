@@ -3,6 +3,9 @@ import React from 'react';
 import styles from '../../styles/Conversation.module.css';
 
 const Conversation = ({ chat, user, onBack }) => {
+  if(!user){
+    return <p>..loading</p>
+  }
   return (
     <div className={styles.conversationContainer} >
       <div className='mainhead' style={{display:'flex'}}>

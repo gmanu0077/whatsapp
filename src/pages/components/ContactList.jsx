@@ -3,8 +3,11 @@ import React, { useState } from 'react';
 import styles from '../../styles/ContactList.module.css';
 
 const ContactList = ({ contacts, onSelectContact, onMarkAsUnread, onDeleteConversation }) => {
-  const [activeContact, setActiveContact] = useState(null);
 
+  const [activeContact, setActiveContact] = useState(null);
+  if(!contacts){
+    return <p>..loading</p>
+  }
   const handleOpenModal = (userId) => {
     setActiveContact(userId);
   };

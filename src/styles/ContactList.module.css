@@ -96,7 +96,7 @@
 .modalOption {
   padding: 5px;
   cursor: pointer;
-  color: rgb(200,200,200);
+  color: rgb(8, 8, 8);
 }
 
 .modalOption:hover {
